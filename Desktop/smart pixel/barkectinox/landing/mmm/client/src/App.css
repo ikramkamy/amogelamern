@@ -1,0 +1,244 @@
+.App {
+  margin: 0;
+  padding: 0;
+ border: 1px hidden black;
+ height: 110vh;
+ width: 100%;
+ position: relative;
+ font-family: 'Bebas Neue', cursive;
+background-color: black;
+}
+
+
+.imgBack{
+  width: 100%;
+  height: 100%;
+  position : absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit :cover;
+  z-index: 1;
+}
+
+.appContent{
+  border: 4px hidden red;
+  height: 100%;
+  width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ overflow-x: hidden;
+ z-index: 100000;
+ }
+
+ .form, .titleForm{
+  border: 1px hidden white;
+  height: 690px;
+  width: 500px;
+ border-radius: 10px;
+ z-index: 46;
+ }
+
+.titleForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ text-align: center;
+
+}
+
+.titleForm h1{
+  width: 500px;
+font-size: 4.7em;
+border: 1px hidden black;
+color: white;
+font-weight: 500;
+
+
+text-shadow: 4 0 5px black, 4 0 5px black;
+}
+
+
+.formulaire{
+  font-size: 0.8em;
+}
+
+
+.suivant{
+  font-size: 0.85em;
+}
+
+
+.recevoir {
+  font-size: 1.3em;
+}
+
+
+
+.devis {
+  font-size: 1.4em;
+
+}
+.form {
+  background-color: rgba(255,255,255,0.5);
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.firstForm, .secondForm {
+  border: 1px hidden black;
+  height: 170px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondForm {
+  height: 520px;
+  border : 1px hidden orange;
+}
+
+.form1, .form2{
+  border: 1px hidden blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.inputField input{
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+z-index: 20000;
+border: none;
+}
+
+.form1 p, .form2 p{
+  width: 80px;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+
+.form1 p {
+  font-weight: 800;
+}
+
+
+.form2 p{
+  font-size: 1.15em;
+}
+
+.line{
+  border: 1px solid black;
+  width: 400px;
+}
+
+.form2 button{
+  height: 40px;
+  width: 100px;
+  background-color: rgb(230, 73, 99);
+  border: 1px solid rgb(230, 73, 99);
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+}
+
+
+.footer{
+  width: 100%;
+  border: 1px hidden red;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo{
+  width: 90px;
+}
+
+.signature{
+  height: 100%;
+  width: auto;
+  border : 1px hidden white;
+}
+
+
+.signature p {
+color: white;
+margin-right: 20px;
+font-size: 1.5em;
+font-weight: 500;
+}
+
+@media screen and (max-width : 1006px) {
+  .appContent{
+ flex-direction: column;
+ height: auto;
+   }
+
+   .App {
+     height: auto;
+   }
+   .footer{
+     margin-top: 30px;
+   }
+   
+}
+
+
+
+
+ @media screen and (max-width : 505px) {
+  .form1, .form2{
+    flex-direction: column;
+    height: auto;
+  }
+  .form1 p, .form2 p {
+    width: 100%;
+    text-align: center;
+  }
+ .firstForm, .secondForm {
+  border: 1px hidden black;
+  height: auto;
+ }
+
+ .form {
+  height: auto;
+  width: 95%;
+}
+
+.form2 button{
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.line{
+  margin-top: 20px;
+  width: 29%;
+}
+
+
+.signature p {
+  color: white;
+  margin-right: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 30px;
+  }
+}
+
